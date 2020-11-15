@@ -7,3 +7,4 @@ So, I decided to code my own website over continuing with that WordPress templat
   - [ ] Upload to blog
 - [ ] Maybe change that picture? I look kind of mean. o_o
 - [ ] Change grammar in Additional Skills
+- [ ] Maybe get a new domain name
