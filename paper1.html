@@ -9,10 +9,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <meta
-      name="description"
-      content="Camille Dunning's Website"
-    />
+    <meta name="description" content="Camille Dunning's Website" />
     <meta name="keywords" content="vcard, html5, portfolio" />
     <meta name="author" content="Camille Dunning" />
     <meta name="theme-color" content="#1755cf" />
@@ -65,7 +62,7 @@
         <header id="masthead" class="header" role="banner">
           <!-- header-wrap -->
           <div class="header-wrap layout-full">
-            <img src="images/home/home.jpg" alt="profile-image" />
+            <img src="image/home/cam-dtn.png" alt="profile-image" />
 
             <h1 class="site-title">Camille Dunning</h1>
             <p class="site-description">Data Science Aspirant</p>
@@ -111,25 +108,6 @@
             </nav>
             <!-- NAV MENU -->
 
-            <!-- SEARCH -->
-            <div class="header-search">
-              <form role="search" method="get" id="search-form" action="#">
-                <input
-                  type="text"
-                  value=""
-                  name="s"
-                  id="search"
-                  placeholder="type and hit enter"
-                />
-                <input
-                  type="submit"
-                  id="search-submit"
-                  title="Search"
-                  value="→"
-                />
-              </form>
-            </div>
-            <!-- SEARCH -->
           </div>
           <!-- header-wrap -->
         </header>
@@ -150,17 +128,20 @@
                       <!-- PORTFOLIO-NAV -->
                       <div class="portfolio-nav">
                         <span class="prev ajax"
-                          ><a href="portfolio-item-02.html"></a
+                          ><a href="dunnlen.html"></a
                         ></span>
                         <span class="back"><a href="#/portfolio"></a></span>
                         <span class="next ajax"
-                          ><a href="portfolio-item-01.html"></a
+                          ><a href="sigmet.html"></a
                         ></span>
                       </div>
                       <!-- PORTFOLIO-NAV -->
 
                       <!-- TITLE -->
-                      <h1 class="entry-title">sigmet</h1>
+                      <h1 class="entry-title">
+                        quantifying the effects of the 2008 recession using the
+                        zillow dataset
+                      </h1>
                       <!-- TITLE -->
                     </header>
                     <!-- .entry-header -->
@@ -170,28 +151,44 @@
                       <!-- .portfolio-desc -->
                       <div class="portfolio-desc">
                         <p>
-                          Sigmet (Signal Metrics Toolkit) is an end-to-end solution
-                          for the detection and measurement of negative shocks in time
-                          series data. It is an implementation of an algorithm we
-                          designed that computes the area between a raw TS signal and
-                          its SARIMAX or ARIMA projection. This will not only quantify
-                          price shocks by its area, but will also account for volatility
-                          observed in the training trend. You can install the package
-                          by launching the project below.
+                          This report explores the use of Zillow's housing
+                          metrics dataset to investigate the effects of the 2008
+                          US subprime mortgage crisis on various US locales. We
+                          begin by exploring the causes of the recession and the
+                          metrics available to us in the dataset. We settle on
+                          using the Zillow Home Value Index (ZHVI) because it is
+                          seasonally adjusted and able to account for a variety
+                          of inventory factors. Then, we explore three
+                          methodologies for quantifying recession impact: (a)
+                          Principal Components Analysis, (b) Area Under
+                          Baseline, and (c) ARIMA modeling and Confidence
+                          Intervals. While PCA does not yield useable results,
+                          we ended up with six cities from both AUB and ARIMA
+                          analysis, the top 3 "losers" and "gainers" of the 2008
+                          recession, as determined by each analysis. This gave
+                          us 12 cities in total. Finally, we tested the
+                          robustness of our analysis against three "common
+                          knowledge" metrics for the recession: geographic
+                          clustering, population trends, and unemployment rate.
+                          While we did find some overlap between the results of
+                          our analysis and geographic clustering, there was no
+                          positive regression outcome from comparing our
+                          methodologies to population trends and the
+                          unemployment rate.
                         </p>
 
                         <div class="portfolio-meta">
-                          <strong>Clients:</strong> Financial and data analysts
-                          <strong>Start Date:</strong> Spring 2020
-                          <strong>Services:</strong> Time series analysis
+                          <strong>Clients:</strong> Financial analysts
+                          <strong>Start Date:</strong> Fall 2019
+                          <strong>Services:</strong> Data exploration, numerical analysis
                         </div>
 
                         <p>
                           <a
-                            href="https://pypi.org/project/sigmet/"
+                            href="https://arxiv.org/abs/1912.11341"
                             target="_blank"
                             class="button primary"
-                            >LAUNCH PROJECT</a
+                            >READ PAPER</a
                           >
                         </p>
                       </div>
@@ -200,11 +197,11 @@
                       <!-- PORTFOLIO-NAV BOTTOM -->
                       <div class="portfolio-nav">
                         <span class="prev ajax"
-                          ><a href="portfolio-item-02.html"></a
+                          ><a href="space.html"></a
                         ></span>
                         <span class="back"><a href="#/portfolio"></a></span>
                         <span class="next ajax"
-                          ><a href="portfolio-item-01.html"></a
+                          ><a href="paper2.html"></a
                         ></span>
                       </div>
                       <!-- PORTFOLIO-NAV BOTTOM-->
