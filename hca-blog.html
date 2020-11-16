@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="no-js classic-page-layout"
+  data-audio-wind="audio/wind.mp3"
+  data-audio-wind-reverse="audio/wind-reverse.mp3"
+  data-audio-tick="audio/tick.mp3"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Camille Dunning's Website" />
+    <meta name="keywords" content="vcard, html5, portfolio" />
+    <meta name="author" content="Camille Dunning" />
+    <meta name="theme-color" content="#1755cf" />
+
+    <title>Camille Dunning</title>
+
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png" />
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jquery.magnific-popup/magnific-popup.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/fonts/fontello/css/fontello.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/align.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/768.css" />
+
+    <!-- INITIAL SCRIPTS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+  </head>
+
+  <body>
+    <!-- PAGE -->
+    <div id="page" class="hfeed site">
+      <!-- .site-main -->
+      <main id="main" class="site-main cd-main">
+        <!-- HEADER -->
+        <header id="masthead" class="header" role="banner">
+          <!-- header-wrap -->
+          <div class="header-wrap layout-full">
+            <img src="images/home/cam-dtn.jpg" alt="profile-image" />
+
+            <h1 class="site-title">Camille Dunning</h1>
+            <p class="site-description">Data Science Aspirant</p>
+
+            <!-- header-social -->
+            <div class="header-bottom">
+              <a
+                class="social-link facebook"
+                href="https://www.facebook.com/camille.dunning/"
+              ></a>
+              <a
+                class="social-link github"
+                href="https://github.com/camille-004"
+              ></a>
+              <a
+                class="social-link linkedin"
+                href="https://www.linkedin.com/in/camille-d-780530129/"
+              ></a>
+              <a
+                class="social-link instagram"
+                href="https://www.instagram.com/okay.camille/"
+              ></a>
+            </div>
+            <!-- header-social -->
+
+            <!-- NAV MENU -->
+            <nav
+              id="primary-navigation"
+              class="site-navigation primary-navigation"
+              role="navigation"
+            >
+              <div class="nav-menu menu-with-icons">
+                <ul>
+                  <li><a class="home" href="index.html">Home</a></li>
+                  <li><a class="return" href="blog.html">Back To Blog</a></li>
+                </ul>
+              </div>
+            </nav>
+            <!-- NAV MENU -->
+          </div>
+          <!-- header-wrap -->
+        </header>
+        <!-- HEADER -->
+
+        <!-- site-middle -->
+        <div class="site-middle">
+          <div class="layout-fixed">
+            <div id="primary" class="content-area">
+              <!-- site-content -->
+              <div id="content" class="site-content" role="main">
+                <!-- .blog-single -->
+                <div class="blog-single page-layout">
+                  <!-- .hentry -->
+                  <article class="post type-post hentry">
+                    <!-- .entry-header -->
+                    <header class="entry-header">
+                      <h1 class="entry-title">
+                        An Overview of Hierarchical Cluster Analysis (HCA)
+                      </h1>
+
+                      <!-- .entry-meta -->
+                      <div class="entry-meta">
+                        <span class="entry-date">
+                          <time
+                            class="entry-date"
+                            datetime="2020-04-28T04:34:10+00:00"
+                            >April 28, 2020</time
+                          >
+                        </span>
+                      </div>
+                      <!-- .entry-meta -->
+                    </header>
+                    <!-- .entry-header -->
+
+                    <!-- .featured-image -->
+                    <div class="featured-image">
+                      <img src="images/blog/hca.png" alt="blog-image" />
+                    </div>
+                    <!-- .featured-image -->
+
+                    <!-- .entry-content -->
+                    <div class="entry-content">
+                      <h2>Clustering in Sum</h2>
+
+                      <p class="drop-cap">
+                        In Data Science, big, messy problem sets are
+                        unavoidable. If we keep them as such, every step of the
+                        analytical process will be much more cumbersome. Given
+                        this, it’s inarguable that we would want a way to view
+                        our data at large in a logical and organized manner.
+                      </p>
+
+                      <p>
+                        Clustering is one of the most popular methods in data
+                        science and is an unsupervised Machine Learning
+                        technique that enables us to find structures within our
+                        data, without trying to obtain specific insight. In
+                        cluster analysis, we partition our dataset into groups
+                        that share similar attributes. The math blog, Eureka!,
+                        put it nicely: we want to assign our data points to
+                        clusters such that there is “high intra-cluster
+                        similarity” and “low inter-cluster similarity.” Here are
+                        some examples of real-life applications of clustering.
+                      </p>
+
+                      <p>
+                        One example is in the marketing industry. Clustering
+                        algorithms have proven to be effective in producing what
+                        they call “market segments” in market research. For each
+                        market segment, a business may have different criteria
+                        for catering to their needs and effectively marketing
+                        their product or service.
+                      </p>
+
+                      <p>
+                        For example, when plotting customer satisfaction (CSAT)
+                        score and customer loyalty (Figure 1), clustering can be
+                        used to segment the data into subgroups, from which we
+                        can get pretty unexpected results that may stimulate
+                        experiments and further analysis. In this case, we
+                        attained a whole cluster of customers who are loyal but
+                        have low CSAT scores.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/seg.png" alt="Image" />
+                        <p class="wp-caption-text">
+                          Figure 1: Visual from Segmentation Study Guide
+                        </p>
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        Clustering algorithms — particularly <em>k</em>-means
+                        (<em>k</em>=2) clustering– have also helped speed up
+                        spam email classifiers and lower their memory usage.
+                        They have also made headway in helping classify
+                        different species of plants and animals, organizing of
+                        assets, identifying frauds, and studying housing values
+                        based on factors such as geographic location.
+                      </p>
+
+                      <p>
+                        Let us proceed and discuss a significant method of
+                        clustering called hierarchical cluster analysis (HCA).
+                        This article will assume some familiarity with k-means
+                        clustering, as the two strategies possess some
+                        similarities, especially with regard to their iterative
+                        approaches.
+                      </p>
+
+                      <h2>Hierarchical Clustering</h2>
+
+                      <p class="drop-cap">
+                        HCA is a strategy that seeks to build a
+                        <strong>hierarchy</strong> of clusters that has an
+                        established ordering from top to bottom.
+                        <em>K</em>-means would not fall under this category as
+                        it does not output clusters in a hierarchy, so let’s get
+                        an idea of what we want to end up with when running one
+                        of these algorithms. A “hierarchy of clusters” is
+                        usually represented by a <strong>dendrogram</strong>,
+                        shown below (Figure 2).
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/fig2.png" alt="Image" />
+                        <p class="wp-caption-text">
+                          Figure 2: Visual from Data Viz Project
+                        </p>
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        For instance, a dendrogram that describes scopes of
+                        geographic locations might have a name of a country at
+                        the top,, then it might point to its regions, which will
+                        then point to their states/provinces, then counties or
+                        districts, and so on.
+                      </p>
+
+                      <p>
+                        To create a dendrogram, we must compute the similarities
+                        between the attributes. Note that to compute the
+                        similarity of two features, we will usually be utilizing
+                        the Manhattan distance or Euclidean distance. These
+                        distances would be recorded in what is called a
+                        <strong>proximity matrix</strong>, an example of which
+                        is depicted below (Figure 3), which holds the distances
+                        between each point. We would use those cells to find
+                        pairs of points with the smallest distance and start
+                        linking them together to create the dendrogram. I will
+                        not be delving too much into the mathematical formulas
+                        used to compute the distances between the two clusters,
+                        but they are not too difficult and you can read about it
+                        <a
+                          href="https://en.wikipedia.org/wiki/Hierarchical_clustering"
+                          >here</a
+                        >.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/fig3.png" alt="Image" />
+                        <p class="wp-caption-text">
+                          Figure 3: Visual from Segmentation Study Guide
+                        </p>
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        I will describe how a dendrogram is used to represent
+                        HCA results in more detail later. For now, consider the
+                        following heatmap of our example raw data. We will
+                        assume this heat mapped data is numerical. In case you
+                        aren’t familiar with heatmaps, the different colors
+                        correspond to the magnitude of the numerical value of
+                        each attribute in each sample. Light colors here, for
+                        example, might correspond to middle values, dark orange
+                        might represent high values, and dark blue might
+                        represent lower values. Darker colors usually refer to
+                        extreme values in a numerical dataset.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex1.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        We see that based on the patterns in each row, Attribute
+                        #1 and Attribute #3 are similar. We will “cluster” them
+                        as follows:
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex2.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        Now, we have a cluster for our first two similar
+                        attributes, and we actually want to treat that as one
+                        attribute. We now want to figure out which of Attribute
+                        #2 and Attribute #4 are most similar to Cluster #1. We
+                        then compare the three clusters, but we find that
+                        Attribute #2 and Attribute #4 are actually the most
+                        similar. Thus, we end up with the following:
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex3.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        Finally, since we now only have two clusters left, we
+                        can merge them together to form one final,
+                        all-encompassing cluster.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex4.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        Now, here’s how we would summarize our findings in a
+                        dendrogram.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex5.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        Notice the differences in the lengths of the three
+                        branches. The original cluster we had at the top,
+                        Cluster #1, displayed the most similarity and it was the
+                        cluster that was formed first, so it will have the
+                        shortest branch. Cluster #2 had the second most
+                        similarity and was formed second, so it will have the
+                        second shortest branch. The longest branch will belong
+                        to the last Cluster #3 since it was formed last.
+                      </p>
+
+                      <p>
+                        Hence, the dendrogram indicates both the similarity in
+                        the clusters and the sequence in which they were formed,
+                        and the lengths of the branches outline the hierarchical
+                        and iterative nature of this algorithm. Under the hood,
+                        we will be starting with <em>k</em>=<em>N</em> clusters,
+                        and iterating through the sequence <em>N</em>,
+                        <em>N</em>-1, <em>N</em>-2,…,1, as shown visually in the
+                        dendrogram.
+                      </p>
+
+                      <p>
+                        There are two different approaches used in HCA:
+                        <strong>agglomerative</strong> clustering and
+                        <strong>divisive</strong> clustering.
+                      </p>
+
+                      <h2>Agglomerative Hierarchical Clustering</h2>
+
+                      <p class="drop-cap">
+                        This is the more common out of the two approaches, and
+                        essentially what I just described above. The process can
+                        be summed up in this fashion:
+                      </p>
+
+                      <p>
+                        Start by assigning each point to an individual cluster.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex2-1.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        At each iteration, we’ll merge clusters together and
+                        repeat until there is only one cluster left. In this
+                        case, the light blue cluster is our last cluster and its
+                        branch will be the longest and at the end on the
+                        dendrogram.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex2-2.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        Since each of our observations started in their own
+                        clusters and we moved up the hierarchy by merging them
+                        together, agglomerative HC is referred to as a
+                        <strong>bottom-up</strong>
+                        approach.
+                      </p>
+
+                      <h2>Divisive Hierarchical Clustering</h2>
+
+                      <p>
+                        A <strong>top-down</strong> procedure, divisive
+                        hierarchical clustering works in reverse order. We start
+                        with one cluster, and we recursively split our enveloped
+                        features into separate clusters, moving down the
+                        hierarchy until each cluster only contains one point.
+                        The algorithm is along these lines:
+                      </p>
+
+                      <p>Assign all <em>N</em> of our points to one cluster.</p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex3-1.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        At each iteration, we will split the farthest data point
+                        from the rest from this larger cluster and assign it to
+                        its own.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex3-2.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <p>
+                        This will continue until <em>N</em> singleton clusters
+                        remain.
+                      </p>
+
+                      <!-- image aligncenter -->
+                      <div class="wp-caption aligncenter">
+                        <img src="images/blog/hca-blog/ex3-3.png" alt="Image" />
+                      </div>
+                      <!-- image aligncenter -->
+
+                      <h2>Takeaways</h2>
+
+                      <p>
+                        There are several advantages associated with using
+                        hierarchical clustering: it shows all the possible links
+                        between clusters, it helps us understand our data much
+                        better, and while <em>k</em>-means presents us with the
+                        luxury of having a “one-size-fits-all” methodology of
+                        having to preset the number of clusters we want to end
+                        up with, doing so is not necessary when using HCA.
+                        However, a commonplace drawback of HCA is the lack of
+                        scalability: imagine what a dendrogram will look like
+                        with 1,000 vastly different observations, and how
+                        computationally expensive producing it would be!
+                      </p>
+
+                      <!-- .entry-meta -->
+                      <footer class="entry-meta tags">
+                        <a href="#" rel="tag">programming</a>
+                        <a href="#" rel="tag">python</a>
+                        <a href="#" rel="tag">numpy</a>
+                        <a href="#" rel="tag">beginner</a>
+                      </footer>
+                      <!-- .entry-meta -->
+                    </div>
+                    <!-- .entry-content -->
+                  </article>
+                  <!-- .hentry -->
+
+                  <!-- .nav-single -->
+                  <nav class="nav-single row">
+                    <div class="nav-previous col-sm-6">
+                      <h6>PREVIOUS POST</h6>
+                      <h5>
+                        <a href="#" rel="prev"
+                          ><span class="meta-nav">←</span> Adding A Personal
+                          Touch To Your Web Design</a
+                        >
+                      </h5>
+                    </div>
+
+                    <div class="nav-next col-sm-6">
+                      <h6>NEXT POST</h6>
+                      <h5>
+                        <a href="#" rel="next"
+                          >How To Build Long-Term Client Relationships
+                          <span class="meta-nav">→</span></a
+                        >
+                      </h5>
+                    </div>
+                  </nav>
+                  <!-- .nav-single -->
+                </div>
+                <!-- .blog-single -->
+              </div>
+              <!-- site-content -->
+            </div>
+            <!-- primary -->
+          </div>
+          <!-- layout -->
+        </div>
+        <!-- site-middle -->
+
+        <!-- .site-footer -->
+        <footer id="colophon" class="site-footer" role="contentinfo">
+          <!-- .site-info -->
+          <div class="site-info">
+            <div class="textwidget">
+              <p>
+                <a href="index.html"
+                  >Copyright &copy; 2020 by Camille Dunning</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- .site-info -->
+        </footer>
+        <!-- .site-footer -->
+      </main>
+      <!-- .site-main -->
+
+      <!-- ALERT : used for contact form mail delivery alert -->
+      <div class="site-alert animated"></div>
+    </div>
+    <!-- PAGE -->
+
+    <!-- SCRIPTS -->
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery.address.js"></script>
+    <script src="js/nprogress/nprogress.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- 
+        	Get Google Map Api Key
+        	https://developers.google.com/maps/documentation/javascript/get-api-key
+            
+            Get your google map api key and uncomment the script code below and paste your api key.
+        -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE"></script>-->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
